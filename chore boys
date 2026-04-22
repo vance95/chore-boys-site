@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chore Boys | Lawn Care & Window Cleaning</title>
+
+<style>
+body{font-family:Arial;margin:0;background:#f5f5f5;color:#222;}
+<a href="reviews.html">Reviews</a>
+header{
+background:black;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:#1e1e1e;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero button{
+padding:12px 25px;
+font-size:16px;
+background:#2ecc71;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.service-card{
+background:white;
+padding:25px;
+border-radius:10px;
+width:250px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>CHORE BOYS</h1>
+<nav>
+<a href="#services">Services</a>
+<a href="reviews.html">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Lawn Care & Window Cleaning</h2>
+<p>Reliable local service to keep your property looking its best.</p>
+<button onclick="location.href='#contact'">Book Now</button>
+</section>
+
+<section id="services" class="section">
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="service-card">
+<h3>Lawn Mowing</h3>
+<p>Clean, even mowing with trimming and driveway cleanup.</p>
+</div>
+
+<div class="service-card">
+<h3>Window Cleaning</h3>
+<p>Streak-free window washing to make your home shine.</p>
+</div>
+
+<div class="service-card">
+<h3>Yard Cleanup</h3>
+<p>Leaf removal and yard maintenance.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2>Book a Service</h2>
+
+<p><strong>Phone:</strong> Your Number</p>
+<p><strong>Email:</strong> your@email.com</p>
+
+</section>
+
+<footer>
+<p>© 2026 Chore Boys</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chore Boys Reviews</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f5f5;
+margin:0;
+text-align:center;
+}
+
+header{
+background:black;
+color:white;
+padding:25px;
+}
+
+.review{
+background:white;
+margin:20px auto;
+padding:20px;
+width:320px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.star-rating{
+direction: rtl;
+display: inline-block;
+font-size:30px;
+}
+
+.star-rating input{
+display:none;
+}
+
+.star-rating label{
+color:#ccc;
+cursor:pointer;
+}
+
+.star-rating input:checked ~ label{
+color:gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label{
+color:gold;
+}
+
+input, textarea{
+width:260px;
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+padding:12px 25px;
+background:#2ecc71;
+border:none;
+color:white;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Customer Reviews</h1>
+</header>
+
+<div class="review">
+⭐⭐⭐⭐⭐  
+<p>"Great lawn service. Fast and professional!"</p>
+<strong>- Mike R.</strong>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐  
+<p>"Windows looked spotless after they cleaned them."</p>
+<strong>- Sarah L.</strong>
+</div>
+
+<h2>Leave a Review</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required><br>
+
+<div class="star-rating">
+<input type="radio" name="rating" id="5"><label for="5">★</label>
+<input type="radio" name="rating" id="4"><label for="4">★</label>
+<input type="radio" name="rating" id="3"><label for="3">★</label>
+<input type="radio" name="rating" id="2"><label for="2">★</label>
+<input type="radio" name="rating" id="1"><label for="1">★</label>
+</div>
+
+<br>
+
+<textarea placeholder="Write your review" required></textarea><br>
+
+<button type="submit">Submit Review</button>
+
+</form>
+
+</body>
+</html>
